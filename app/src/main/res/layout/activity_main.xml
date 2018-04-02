@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.trong.sqlitebookmanage.activity.MainActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <AutoCompleteTextView
+            android:id="@+id/autoSearch"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:hint="Search..."
+            android:padding="3dp"
+            android:layout_weight="6"
+            android:background="@drawable/shape_khungvien"
+            android:completionThreshold="3"
+            />
+        <ImageButton
+            android:id="@+id/imgSerch"
+            android:background="@drawable/shape_khungvien"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:src="@drawable/search_24px"/>
+    </LinearLayout>
+
+
+
+    <Spinner
+        android:id="@+id/spinerFilter"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"></Spinner>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+        <ListView
+            android:id="@+id/lvBook"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true"></ListView>
+        <ImageButton
+            android:id="@+id/imgBtnAddBook"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/addbook"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

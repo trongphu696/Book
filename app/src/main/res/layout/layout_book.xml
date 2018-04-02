@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_margin="10dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/book_name"/>
+    <EditText
+        android:id="@+id/edt_book_name"
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gray_background_input"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/author"/>
+    <EditText
+        android:id="@+id/edt_author"
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gray_background_input"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kind_of_book"/>
+    <TextView
+        android:id="@+id/edt_kindofbook"
+        android:padding="2dp"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/gray_background_input"/>
+
+</LinearLayout>
